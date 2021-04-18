@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(black 0% , hotpink 100%);
+}
+p{
+    color:white;
+    font-size: 35px;
+}
+img{
+    width:750px !important;
+    height: 750px !important;
+}
+button{
+    background-color: crimson;
+    color:white;
+    font-size: 25px;
+    border-style: solid;
+    border-color: cyan;
+    border-width: 3.5px;
+    padding:10px;
+    margin-top:10px;
+}

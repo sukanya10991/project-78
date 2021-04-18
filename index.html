@@ -1,23 +1,40 @@
 <html>
     <head>
         <title>Blackpink book</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div>
         <h1>The BLACKPINK book</h1>
         <img src="https://dazedimg-dazedgroup.netdna-ssl.com/900/azure/dazed-prod/1300/4/1304733.jpg" id="hi">
+        <br>
         <button onclick="crackhead()">Meet blackpink</button>
-        <p>Blackpink is the best!</p>
+        <button onclick="crack()">Read text</button>
+        <p id="solo">Blackpink is the best!</p>
+        </div>
     </body>
     <script>
-        var img=["https://static.billboard.com/files/media/lisa-blackpink-2019-b-billboard-1548-compressed.jpg",
-        "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/tfwaarvyi4ka0beb_1616227649.jpeg?tr=w-758,h-433",
-        "https://qph.fs.quoracdn.net/main-qimg-99674b15041e648e58263efc5ec0dcdb",
-        "https://english.sakshi.com/sites/default/files/styles/canvas/public/article_images/2021/01/3/jisoo-1609663217.jpg?itok=NxZF3WRx",
-        "https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2020/06/10/8e352e96-a96e-11ea-bf1b-7541df8028ff_image_hires_114359.jpg?itok=X0DUcXW-&v=1591760644"];
+        var img=["https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2020/06/10/8e352e96-a96e-11ea-bf1b-7541df8028ff_image_hires_114359.jpg?itok=X0DUcXW-&v=1591760644",
+                "https://static.billboard.com/files/media/lisa-blackpink-2019-b-billboard-1548-compressed.jpg",
+                 "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/tfwaarvyi4ka0beb_1616227649.jpeg?tr=w-758,h-433",
+                 "https://qph.fs.quoracdn.net/main-qimg-99674b15041e648e58263efc5ec0dcdb",
+                 "https://english.sakshi.com/sites/default/files/styles/canvas/public/article_images/2021/01/3/jisoo-1609663217.jpg?itok=NxZF3WRx"];
         var choose=0;
         function crackhead(){
         document.getElementById("hi").src=img[choose]
         choose++;
+        }
+        var text=["BLACKPINK-BLACKPINK is a South Korean girl group formed by YG Entertainment. The group consists of four members: Jennie, Lisa, Jisoo, and Rosé . They officially debuted on August 8, 2016 with the single album Square One . BLACKPINK fans are called Blinks.",
+                "Lisa-Lisa is a Thai rapper, singer, dancer and model, currently based in South Korea. She is the youngest member of BLACKPINK.",
+                  "Rosé-Rosé is an Australian singer and dancer, currently based in South Korea. She is a member of BLACKPINK.",
+                  "Jennie-Jennie is a South Korean singer, rapper and dancer. Jennie is a member of BLACKPINK, as well as a soloist.",
+                  "Jisoo-Jisoo is a South Korean singer and actress. She is a member of BLACKPINK.",
+                  ];
+        var choos=0;
+        function crack(){
+        document.getElementById("solo").innerHTML = text[choos];
+        console.log(text);
+        choos++;
         }
     </script>
 </html> 
